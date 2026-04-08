@@ -47,7 +47,8 @@ public class EnemyController : MonoBehaviour
 
         if (hitVFX != null)
         {
-            Instantiate(hitVFX, transform.position, Quaternion.identity);
+            GameObject vfx = Instantiate(hitVFX, transform.position, Quaternion.identity);
+            Destroy(vfx, 1f);
         }
 
         if (currentHealth <= 0)
@@ -66,7 +67,8 @@ public class EnemyController : MonoBehaviour
     {
         if (deathVFX != null)
         {
-            Instantiate(deathVFX, transform.position, Quaternion.identity);
+            GameObject vfx = Instantiate(deathVFX, transform.position, Quaternion.identity);
+            Destroy(vfx, 1f);
         }
 
         EnemyManager.Instance.UnregisterEnemy(this);
