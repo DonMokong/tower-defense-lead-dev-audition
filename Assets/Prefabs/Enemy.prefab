@@ -128,3 +128,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
   stats: {fileID: 11400000, guid: 9ecc97985fbb443bdabd1523b445636a, type: 2}
   target: {fileID: 0}
+  hitVFX: {fileID: 2215280711080509361, guid: 4647b0ec4e39c4c69aeb601922de46c1, type: 3}
+  deathVFX: {fileID: 2215280711080509361, guid: 8fa695b6857fd4f62b3e1c3fcee44d7b, type: 3}

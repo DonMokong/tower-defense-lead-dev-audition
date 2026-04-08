@@ -5,6 +5,9 @@ public class EnemyController : MonoBehaviour
     public EnemyStats stats;
     public Transform target;
 
+    public GameObject hitVFX;
+    public GameObject deathVFX;
+
     private float currentHealth;
 
     void Start()
@@ -38,6 +41,11 @@ public class EnemyController : MonoBehaviour
     {
         currentHealth -= damage;
 
+        if (hitVFX != null)
+        {
+            Instantiate(hitVFX, transform.position, Quaternion.identity);
+        }
+
         if (currentHealth <= 0)
         {
             Die();
@@ -52,8 +60,14 @@ public class EnemyController : MonoBehaviour
 
     void Die()
     {
+        if (deathVFX != null)
+        {
+            Instantiate(deathVFX, transform.position, Quaternion.identity);
+        }
+
         EnemyManager.Instance.UnregisterEnemy(this);
         GameManager.Instance.AddScore(stats.scoreValue);
+
         Destroy(gameObject);
     }
 }
