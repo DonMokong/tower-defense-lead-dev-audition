@@ -1,11 +1,12 @@
 ﻿<Properties StartupConfiguration="{91186B72-A27D-200E-F850-E068F92E1F82}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Core/EnemySpawner.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Core/MouseClickDamage.cs">
     <Files>
       <File FileName="Assets/Scripts/Data/EnemyStats.cs" Line="10" Column="2" />
       <File FileName="Assets/Scripts/Core/EnemyManager.cs" Line="29" Column="2" />
       <File FileName="Assets/Scripts/Core/GameManager.cs" Line="37" Column="2" />
       <File FileName="Assets/Scripts/Enemies/EnemyController.cs" Line="59" Column="2" />
-      <File FileName="Assets/Scripts/Core/EnemySpawner.cs" Line="27" Column="2" />
+      <File FileName="Assets/Scripts/Core/EnemySpawner.cs" Line="31" Column="2" />
+      <File FileName="Assets/Scripts/Core/MouseClickDamage.cs" Line="30" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,7 +15,7 @@
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
                 <Node name="Core" expanded="True">
-                  <Node name="EnemySpawner.cs" selected="True" />
+                  <Node name="MouseClickDamage.cs" selected="True" />
                 </Node>
                 <Node name="Data" expanded="True" />
                 <Node name="Enemies" expanded="True" />
