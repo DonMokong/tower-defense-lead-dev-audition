@@ -5,6 +5,8 @@ public class Projectile : MonoBehaviour
     public float speed = 10f;
     public float damage = 5f;
 
+    public float aoeRadius = 0f;
+
     private EnemyController target;
 
     public void SetTarget(EnemyController enemy)
@@ -34,7 +36,30 @@ public class Projectile : MonoBehaviour
 
     void HitTarget()
     {
-        target.TakeDamage(damage);
+        if (aoeRadius > 0f)
+        {
+            ApplyAOEDamage();
+        }
+        else
+        {
+            target.TakeDamage(damage);
+        }
+
         Destroy(gameObject);
+    }
+
+    void ApplyAOEDamage()
+    {
+        Collider[] hits = Physics.OverlapSphere(transform.position, aoeRadius);
+
+        foreach (var hit in hits)
+        {
+            EnemyController enemy = hit.GetComponent<EnemyController>();
+
+            if (enemy != null)
+            {
+                enemy.TakeDamage(damage);
+            }
+        }
     }
 }

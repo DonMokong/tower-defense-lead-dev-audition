@@ -3,18 +3,25 @@ using UnityEngine;
 
 public class EnemyManager : MonoBehaviour
 {
-    public static EnemyManager Instance;
+    public static EnemyManager Instance { get; private set; }
 
     private List<EnemyController> activeEnemies = new List<EnemyController>();
 
     void Awake()
     {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
         Instance = this;
     }
 
     public void RegisterEnemy(EnemyController enemy)
     {
-        activeEnemies.Add(enemy);
+        if (!activeEnemies.Contains(enemy))
+            activeEnemies.Add(enemy);
     }
 
     public void UnregisterEnemy(EnemyController enemy)

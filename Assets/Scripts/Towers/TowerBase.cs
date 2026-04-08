@@ -39,4 +39,10 @@ public abstract class TowerBase : MonoBehaviour
     }
 
     protected abstract void Fire();
+
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, range);
+    }
 }

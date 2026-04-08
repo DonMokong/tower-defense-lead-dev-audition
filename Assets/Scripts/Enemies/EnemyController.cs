@@ -13,7 +13,11 @@ public class EnemyController : MonoBehaviour
     void Start()
     {
         currentHealth = stats.maxHealth;
-        EnemyManager.Instance.RegisterEnemy(this);
+
+        if (EnemyManager.Instance != null)
+        {
+            EnemyManager.Instance.RegisterEnemy(this);
+        }
     }
 
     void Update()

@@ -126,3 +126,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Projectile
   speed: 10
   damage: 5
+  aoeRadius: 2
