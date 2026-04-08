@@ -1,16 +1,17 @@
 ﻿<Properties StartupConfiguration="{91186B72-A27D-200E-F850-E068F92E1F82}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Towers/MultiTargetTower.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UI/EnemyHealthBar.cs">
     <Files>
       <File FileName="Assets/Scripts/Data/EnemyStats.cs" Line="10" Column="2" />
-      <File FileName="Assets/Scripts/Core/EnemyManager.cs" Line="29" Column="2" />
+      <File FileName="Assets/Scripts/Core/EnemyManager.cs" Line="36" Column="2" />
       <File FileName="Assets/Scripts/Core/GameManager.cs" Line="37" Column="2" />
-      <File FileName="Assets/Scripts/Enemies/EnemyController.cs" Line="73" Column="2" />
-      <File FileName="Assets/Scripts/Core/EnemySpawner.cs" Line="31" Column="2" />
+      <File FileName="Assets/Scripts/Enemies/EnemyController.cs" Line="72" Column="10" />
+      <File FileName="Assets/Scripts/Core/EnemySpawner.cs" Line="40" Column="2" />
       <File FileName="Assets/Scripts/Core/MouseClickDamage.cs" Line="9" Column="1" />
-      <File FileName="Assets/Scripts/Towers/TowerBase.cs" Line="42" Column="2" />
-      <File FileName="Assets/Scripts/Towers/Projectile.cs" Line="40" Column="2" />
+      <File FileName="Assets/Scripts/Towers/TowerBase.cs" Line="47" Column="6" />
+      <File FileName="Assets/Scripts/Towers/Projectile.cs" Line="65" Column="2" />
       <File FileName="Assets/Scripts/Towers/AOETower.cs" Line="25" Column="2" />
       <File FileName="Assets/Scripts/Towers/MultiTargetTower.cs" Line="26" Column="2" />
+      <File FileName="Assets/Scripts/UI/EnemyHealthBar.cs" Line="12" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -21,8 +22,9 @@
                 <Node name="Core" expanded="True" />
                 <Node name="Data" expanded="True" />
                 <Node name="Enemies" expanded="True" />
-                <Node name="Towers" expanded="True">
-                  <Node name="MultiTargetTower.cs" selected="True" />
+                <Node name="Towers" expanded="True" />
+                <Node name="UI" expanded="True">
+                  <Node name="EnemyHealthBar.cs" selected="True" />
                 </Node>
               </Node>
             </Node>

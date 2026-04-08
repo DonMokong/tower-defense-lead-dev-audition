@@ -10,9 +10,12 @@ public class EnemyController : MonoBehaviour
 
     private float currentHealth;
 
+    public EnemyHealthBar healthBar;
+
     void Start()
     {
         currentHealth = stats.maxHealth;
+        healthBar.SetHealth(currentHealth, stats.maxHealth);
 
         if (EnemyManager.Instance != null)
         {
@@ -50,6 +53,8 @@ public class EnemyController : MonoBehaviour
             GameObject vfx = Instantiate(hitVFX, transform.position, Quaternion.identity);
             Destroy(vfx, 1f);
         }
+
+        healthBar.SetHealth(currentHealth, stats.maxHealth);
 
         if (currentHealth <= 0)
         {
